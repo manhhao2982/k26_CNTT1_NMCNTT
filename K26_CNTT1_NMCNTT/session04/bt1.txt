@@ -1,0 +1,12 @@
+Session04 : bt1
+
+Phần 1: chỉ ra 3 lỗi sai
+
+- lỗi sai 1: Nam đã vi phạm quy tắc tạo tên cho folder, vi phạm khi sử dụng dấu cách (Shoppe Projects)
+- Lỗi sai 2: vì Nam đặt tên folder có dấu cách khi muốn di chuyển tới thư mục bằng câu lệnh: cd Shoppe Projects, thì sẽ báo lỗi không tìm thấy đường dẫn 
+- Lỗi sai 3: Nam đã sai khi sử dụng câu lệnh: mkdir để tạo các nhánh thư mục khác cho cây thư mục 
+
+Phần 2:câu lệnh sửa
+- để tạo một thu mục chuẩn: mkdir shoppe-projects
+- để di chuyển tới thư mực shoppe-projects: cd .\shoppe-projects
+- để tạo một các nhánh thư mục khác cho thư mục shoppe-projects: mkdir -p src\assets\imagets
