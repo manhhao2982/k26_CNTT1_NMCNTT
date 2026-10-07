@@ -1,0 +1,6 @@
+ Session 04: bt2
+
+Hoàn chỉnh câu lệnh: theo lệnh trên hệ điều hành windows( powershell)
+- lệnh tạo thư mục drink_module: mkdir drink_module
+- lệnh di chuyển đến thư mục vừa tạo: cd .\drink_module
+- lệnh tạo 2 file rỗng: new-item coffee.txt,tea.txt
