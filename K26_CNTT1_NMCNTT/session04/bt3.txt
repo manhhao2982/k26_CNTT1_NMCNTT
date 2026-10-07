@@ -1,0 +1,5 @@
+Session04: bt3
+Câu lệnh trên giả lập windows powershell
+1. Phân tích
+- sử dụng GUI: mở thư mục click chuột phải chọn new - folder rồi gõ tên thư mục và lặp lại như vậy 50 lần
+- sử dụng CLI: mở windows powershell và soạn thảo theo lệnh: mkdir quan-ly-ban,quan-ly-kho,...( viết đủ 50 tên cho folder)
