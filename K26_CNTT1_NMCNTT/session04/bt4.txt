@@ -1,0 +1,35 @@
+Session04: bt4
+Phần 1: CLI và GUI và cấu trúc câu lệnh
+1. Xác định:
+- Command: ls
+- Options/Flags: -force
+- Argument: C:\Windows\Logs
+2. Tại sao lại sử dụng CLI thay vì dùng GUI
+- Vì CLI dùng sẽ không tốn RAM so với dùng GUI
+- CLI dùng tiện lợi có thể tự động hóa
+- Đặc biệt CLI có thể truy cập được vào sâu của hệ thống Sever
+
+Phần 2: Điều hướng hệ thống file
+3. Lệnh Ralative Path: cd .\quan-ly-sinh-vien\
+4. Absolute Path: C:\Users\student\Desktop\quan-ly-sinh-vien\src\main.py
+5. Lệnh: ls -force ..\data
+
+Phần 3: Thao tác file và thư mục
+6. Lệnh tạo 2 thư mục: mkdir quan-ly-sinh-vien\src,quan-ly-sinh-vien\data
+7. Lệnh tạo 3 file rỗng: new-item main.py,utils.py,README.md
+8.1 Lệnh đổi tên: mv quan-ly-sv quan-ly-sinh-vien
+8.2 Lệnh sao lưu thư mục: cp -r .\quan-ly-sinh-vien\src\,data\ .\backup-quan-ly-sinh-vien\
+
+Phần 4: Xử lý lỗi Terminal
+9.1 Chuẩn đoán: lỗi không tìm thấy đường dẫn tới thư mực src
+9.2 Nguyên nhân: đo folder src chưa được tạo hoặc tạo ở một folder khác không phải con của folder quan-ly-sinh-vien
+9.3 Khắc phục: gõ lệnh cd .( nhấn nút Tab), nút tad sẽ gợi ý cho bạn những folder đang có trong thư mục còn nếu không có tên folder bạn đang tìm thì có lẽ folder đó không tồn tại ở folder cha này
+10.1 Chuẩn đoán: không cấp phép quyền truy cập của file setup.ps1
+10.2 Nguyên nhân: do file có tính chất bảo mật cao và cần quyền cho phép truy cập 
+10.3 Khắc phục: trên window- Right- click Powershell --> Run as Administartor
+11.1 Chuẩn đoán: vì trong folder cần xóa còn có những folder, file khác nên muốn cảnh báo bạn cân nhắc trước khi xóa và đông thời đưa ra các phương án xóa
+11.2 Nguyên nhân: vì trong folder cần xóa còn một vài folder và file khác 
+11.3 Khắc phục: gõ lệnh rmdir - force old-vesion 
+12.a:FileNotFoundError: [Errno 2] No such file or directory: 'data/input.csv'
+12.b:FileNotFoundError
+12.c:Kiểm tra thư mục làm việc hiện tại (C:\Users\student\Desktop\quan-ly-sinh-vien\src) và đường dẫn tương đối 'data/input.csv' xem tệp input.csv đã nằm đúng vị trí src/data/input.csv hay chưa
