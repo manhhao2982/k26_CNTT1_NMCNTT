@@ -1,0 +1,8 @@
+Phần 1: Chỉ ra 2 lỗi sai và giải thích
+- Lỗi 1: sai cách đặt tên folder( sử dụng dấu khoảng cách) và PowerShell báo lỗi không thể tạo thư mục vì máy tính không đọc được kí tự cách, cách khắc phụ là hay viết đúng tên theo định dạng kebab-case: smart-farm-project.
+- Lỗi 2: bạn đã sai khi dùng lệnh 'cd Smart Farm Project', máy sẽ báo lỗi không tìm thấy thư mục muốn đi đến, cách khắc phục hay cho tên folder vào trong dấu( "") or viết đúng tên thư mục theo cách viết kebab-case.
+
+Phần 2: Hoàn thiện
+- Tạo cây thư mục: mkdir -p smart-farm-project\src\sensors\temperature
+- Di chuyển tên thư mục ( smart-farm-project): cd .\smart-farm-project\
+

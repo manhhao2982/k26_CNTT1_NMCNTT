@@ -1,0 +1,41 @@
+Phần 1: Trả lời phần yêu cầu đề bài
+1.1 Tạo cây thư mục smart-ferm chứa bin, config, data bằng một dòng lệnh: mkdir -p smart-ferm   \bin\config\data
+1.2  Tạo file ẩn: ni config\.env
+     Giải thích Get-ChildItem thông thường không nhìn thấy file .env: vì đuôi .env là định 
+     dạng cho một file ẩn và theo thuộc tính của Get-ChildItem sẽ hiển thị danh sách và sẽ bỏ 
+     qua những file ẩn
+1.3 Sao chép file: cp -r Public\template.ps1 bin
+    Đổi tên file: mv bin pump_control.ps1
+1.4 Lệnh kiểm tra thư mục: di chuyển tới folder smart-farm, dùng lệnh dir -a để hiển thị toàn 
+    bộ danh sách thư mục và sử dụng lệnh cd và phím tab để check xem đầy đủ các thư mục chưa
+
+Phần 2: Trả lời yêu cầu đầu ra
+2.1 Bản phân tích IPO
+ Input:
+   - nhập lệnh tạo cây thư mục:  mkdir -p smart-ferm\bin\config\data
+   - nhập lệnh tạo file: ni config\.env
+   - nhập lệnh sao chép file: cp -r Public\template.ps1 bin
+   - nhập lệnh đổi tên: mv bin pump_control.ps1
+   - nhập lệnh: cd .\smart-farm
+   - nhập lệnh hiển thị toàn bộ danh sách file: dir
+ Process:
+   - tạo thư mục pump_control.ps1
+   - nhận lệnh, tạo file ẩn đuôi env trong folder config
+   - sao chép lại dữ liệu trong Public\template.ps1 và chuyển qua bin đồng thời nhận lệnh và
+     đổi tên file thành pump_control.ps1
+   - tìm đường dẫn tới smart-farm và tìm đường dẫn tới toàn bộ các dữ liệu trong smart-farm
+Output:
+   - Thư mục pump_control.ps1 đã được tạo
+   - Tạo thư thành công file ẩn
+   - Chuyển đổi hết các dữ liệu từ Public\template.ps1 vào bin
+   - Đôi tên file bin thành pump_control.ps1
+   - Di chuyển tới file smart-farm sau đó thực hiện lện dir -a để hiển thị toàn bộ thư mục 
+     trong folder
+2.2 Nhật kí log các câu lệnh
+   - lệnh tạo cây thư mục:  mkdir -p smart-ferm\bin\config\data
+   - lệnh tạo file: ni config\.env
+   - lệnh sao chép file: cp -r Public\template.ps1 bin
+   - lệnh đổi tên: mv bin pump_control.ps1
+   - lệnh: cd .\smart-farm
+   - lệnh hiển thị toàn bộ danh sách file: dir
+

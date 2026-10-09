@@ -1,0 +1,23 @@
+Phần 1: Yêu cầu nghiệp vụ
+1.1 Tạo cây thư mục lồng nhau bằng một dòng lệnh: mkdir -p smart-farm\data\logs,smart-farm\code
+1.2 Tạo cùng lúc 3 file: new-item config.json,sensors.py,txt.env
+1.3 Sao chép toàn bộ thư mục 'code' sang 'backup\code_v1': cp -r code backup\code_v1
+
+Phần2: Yêu cầu đầu ra
+2.1 danh sách các câu lệnh đã sử dụng: 
+- 1: mkdir -p smart-farm\data\logs,smart-farm\code
+- 2: new-item config.json,sensors.py,txt.env
+- 3: cp -r code backup\code_v1
+2.2 sơ đồ luồng IPO:
+ Input:
+   - Nhập lệnh tạo thư mục : mkdir -p smart-farm\data\logs,smart-farm\code
+   - Nhập lệnh tạo 3 file: new-item config.json,sensors.py,txt.env
+   - Nhập Lệnh copy: cp -r code backup\code_v1
+ Process:
+   - Tạo các đường dẫn để tạo thư mục
+   - Khởi tạo cùng lúc 3 file 
+   - Sao chép folder và nội dung bên trong, tìm và dán vào folder địa chỉ mới 
+ Output:
+   - Hiển thị ra màn hình thư mục vừa tạo
+   - 3 file rỗng nằm trong folder
+   - Nội dung copy đã được hiển thị trong vị trí mới

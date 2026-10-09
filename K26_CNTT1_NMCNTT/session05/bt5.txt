@@ -1,0 +1,20 @@
+Phần 1: Sơ đồ luồng IPO:
+ Input:
+   - Lệnh di chuyển nhiều file: mv .png,.jpg media
+   - Lệnh gom file code (.py): mv .py scripts
+   - Lệnh xóa file tạm: rm .tmp
+ Process:
+   - Tìm các file có đuổi png,jpg chuyển tới thư mục media
+   - Chọn các file có đuôi py tặp hợp lại rồi chuyển tới thư mục scripts
+   - Chọn file tmp cần xóa kiểm tra xem bên trong còn có tệp khác không nếu có, đưa ra cảnh                       
+     báo và đưa ra những lựa chọn xóa cho người nhập lệnh.
+ Output:
+   - các file đã được chuyển tới thư mục đích đến
+   - File được đưa tới thư mực đích
+   - Xóa file thành công nếu file đó không có tệp tin bên trong và nếu có, sẽ thực hiện xóa    
+     theo yêu cầu của người chọn lệnh.
+
+Phần 2: Danh sách câu lệnh đã sử dụng
+- 1. Lệnh di nhiều chuyển file:  mv .png,.jpg media
+- 2. lệnh di chuyển một file: mv .py scripts
+- 3. lệnh xóa file: rm .tmp

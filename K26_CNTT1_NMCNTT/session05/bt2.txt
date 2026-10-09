@@ -1,0 +1,4 @@
+Hoàn thiện kịch bản Terminal: Bằng câu lệch trên Windows PowerShell
+- Lệnh tạo một thư folder tên drink_module: mkdir drink_module
+- Lệnh để di chuyển đến folder vừa tạo: cd .\drink_module
+- Lệnh tạo 2 file cùng lúc: new-item coffee.txt,tea.txt
