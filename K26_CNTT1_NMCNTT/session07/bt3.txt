@@ -1,0 +1,56 @@
+Phần 1: Đọc và định vị tệp tin
+1. Lệnh powersehll in toàn bộ nội dung file: get-content logs\server.log
+
+2.1 Nguy cơ làm treo máy khi mở một tệp 500MB bằng notepad: khi mở một tệp có một dung lượng lớn qua ứng dụng thì hệ thống sẽ phải cung cấp một vùng RAM để cho ứng dụng hoạt động, vì tệp có dung lượng lớn nên khi khỉ mở quá notepad hệ thống sẽ cấp phát một vùng lớn cho notepad để mở hết toàn bộ 500MB điều này dẫn đến việc bị tràn, bị quá tải mà gây nên hiện tượng giật lag, treo máy.
+
+2.2 Khi dùng Terminal để mở tệp dung lượng 500MB sẽ mượt mà hơn do khi mở hệ thống sẽ lấy luồng dung lượng trực tiếp từ ổ đĩa nên sẽ thoải mái dùng không hhh hướng tới RAM.
+
+3.Lệnh powershell tìm tất cả các file có đuổi .log: get-childitem -r *.log
+
+
+Phần 2: Lọc dữ liệu và Pipe
+4. Lệnh powershell lọc ra các chữ ERROR: select-string "ERROR" logs\server.log
+
+5.1 File 'server.log' nằm trong folder 'logs'; lệnh: get-childitem -r *.log
+
+5.2 Bên trong file có hai dòng có chứa lỗi "404"; lệnh: select-string "404" logs\server.log
+
+5.3 Luồng Pipe: get-content logs\server.log | select-string "404"
+
+6. Lệnh: get-childitem -filter *.log -recurse | get-content | select-string "INFO" -notmath
+
+Phần 3: Toán tử chuyển hướng
+7. Lệnh: get-content logs\server.log | select-string "404" > reports\daily_report.txt
+
+8.1 Lệnh: get-content logs\server.log | select-string "404" >> reports\daily_report.txt
+
+8.2 Giải thích: nếu dùng toán tử > thì nội dung bên trong file lưu lỗi cũ từ trước sẽ xóa hết và thay nội dung lỗi mới vào
+
+Phần 4; Shell Scrip và lệnh "ech"
+9.1 In thông báo: Write-Output "Dang loc log..."
+
+9.2 Tiêu đề: "=== LOG REPORT ===" > get-content logs\server.log | select-string "404"
+
+10.
+a) # Script trích xuất lỗi 404 từ trong file log và lưu vào trong bản báo cáo
+b) Write-Output "Dang loc log..."
+c) get-content logs\server.log | select-string "404" >> reports\daily_report.txt
+
+Phần 5: Viết, chạy và thẩm định Script AI
+
+11.
+a) get-content logs\server.log | select-string "404" >> reports\daily_report.txt\
+b) 
+b1: Soi Lệnh Nguy Hiểm Remove-Item -Force
+b2: Chế Độ Dry-Run thêm tham số -WhatIf để xem trước
+b3: Thử Trong Sandbox
+Tạo một thư mục rác giả định (vd:daily_report_v1.txt ) và copy dữ liệu mẫu vào để chạy thử script trước.
+b4: Thực Thi Kèm Log
+Chạy script chính thức và lưu lại nhật ký với toán tử ">>"
+
+12.a dòng lệnh nguy hiểm: Remove-Item -Recurse -Force C:\* , hậu quả: lệnh này sẽ xóa toàn bộ dữ liệu ở trong ổ đĩa C trên máy tính
+12.b 
+     # AI-generated cleanup script
+     Write-Output "Cleaning up temporary files..."
+     Remove-Item -Recurse -Force reports\daily_report_v1.txt\
+     Write-Output "Done!"

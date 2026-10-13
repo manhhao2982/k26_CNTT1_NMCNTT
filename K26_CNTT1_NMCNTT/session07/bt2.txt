@@ -1,0 +1,9 @@
+Phần 1: Phân tích
+- Lỗi sai: An đã sử dụng nhầm câu lệnh tìm kiếm vị trí file thay vì sử dụng lệnh tìm vị trí nội dung cần chỉ đích
+- Phân biệt:
+  + Get-childitem: câu lệnh tìm các file con nằm trong một folder có cùng một đuôi định dạng
+  + Select-string: câu lệnh dùng tìm kiếm vị nội dung trong một file nào đó
+
+Phần 2: Hoàn thiện
+- Lệnh PowerShell để lọc các dòng chứa" ERROR " từ file access.log và hiển thị số dòng:
+  select-string "ERROR" access.log ( trên power shell sẽ tự động hiển thị sẵn số dòng truy cứu)

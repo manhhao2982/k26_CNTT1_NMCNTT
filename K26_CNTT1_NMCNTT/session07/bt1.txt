@@ -1,0 +1,7 @@
+Phần 1: Phân tích
+- Trong PowerShell, 'cat' là alias của 'Get-Content' — lệnh này in toàn bộ nội dung ra màn hình ngay lập tức, không dừng lại theo từng trang.
+- Tại sao Không nên mở file 500MB bằng notepad: vì file 500MB chắc chắn bên trong sẽ có rất nhiều dữ liệu và sẽ cắt ra thành nhiều trang note, chính vì thế để mở được tất cả các trang bằng notepad thì hệ điều hành sẽ phải cấp phát một vùng RAM vô cùng lớn để chạy ứng dụng, từ dẫn đến việc máy tính bị quá tải và bị giật lag đôi khi sẽ bị tê liệt màn hình.
+
+Phần 2: Hoàn thiện
+- Lệnh PowerShell xem toàn bộ file theo từng trang: get-content server_log_500MB.log | more
+- Lệnh PowerShell xem 10 dòng cuối: get-content server_log_500MB.log -tail 10
