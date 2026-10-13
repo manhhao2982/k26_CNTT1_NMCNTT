@@ -29,7 +29,7 @@ Phần 3: Toán tử chuyển hướng
 Phần 4; Shell Scrip và lệnh "ech"
 9.1 In thông báo: Write-Output "Dang loc log..."
 
-9.2 Tiêu đề: "=== LOG REPORT ===" > get-content logs\server.log | select-string "404"
+9.2 Tiêu đề: echo"=== LOG REPORT ===" > get-content logs\server.log | select-string "404"
 
 10.
 a) # Script trích xuất lỗi 404 từ trong file log và lưu vào trong bản báo cáo
