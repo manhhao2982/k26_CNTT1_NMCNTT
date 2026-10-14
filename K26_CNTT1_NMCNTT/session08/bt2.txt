@@ -1,0 +1,7 @@
+Phần 1: Phân tích
+- lỗi sai: An sử dụng nhầm lệnh get-childitem ( tìm vị trí file có cùng đuôi) thay dùng vì lệnh select-string ( lệnh tìm vị trí nội dung)
+- lệnh  get-childitem -r *.txt :dùng để tìm vị trí các file có cùng đuôi
+- lệnh  select-string "404" access.log: tìm những dòng chứa lỗi 404 trong file access.log
+
+Phần 2: Hoàn thiện
+- lệnh lọc từ khóa "error": select-string "error" access.log

@@ -1,0 +1,7 @@
+Phần 1:Phân tích
+- Khi mở bằng Notepad một file tài liệu nặng tới 800MB, phần file 800MB chiếm quá nhiều vùng RAM được hệ thống cung cấp vì vậy khiến máy tính sẽ bị quá tải, tràn dung lượng dẫn đến việc bị giật lag, không phản hồi.
+- Lệnh 'cat' là lệnh có sẵn trong PowerShell (alias của Get-Content), nhưng không tồn tại trong CMD truyền thống
+
+Phần 2: Hoàn thiện
+1. lệnh xem toàn bộ nội dung tệp: get-content server_log_800MB.log
+2. lệnh xem 10 dòng cuối file để kiểm tra lỗi mới nhất: get-content server_log_800MB.log -tail 10 -Wait

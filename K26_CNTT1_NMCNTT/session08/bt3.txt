@@ -1,0 +1,10 @@
+Phần 1:Sơ đồ
+     . get-content -r *.log 
+        . select-string "TIMEOUT"
+          . select-string "NOT TIMEOUT" -notmath
+            . [kết quả].coun
+
+Phần 2: Triển khai
+- Lệnh: get-content -r *.log | select-string "TIMEOUT" | select-string "NOT TIMEOUT" -notmath .coun 
+
+
