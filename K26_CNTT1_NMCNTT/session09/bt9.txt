@@ -1,0 +1,60 @@
+Phần 1:
+1.1 
+ - Input:
+      - Phần 1 — Giới thiệu CLB: #CLB
+      - Phần 2 — Danh sách Ban: | Tên Ban | Trưởng Ban | Liên hệ (email dạng link mailto:|
+      - Phần 3 — Hướng dẫn Gia nhập:`lệnh git`
+      - Phần 4 — Checklist Nhiệm vụ Thành viên Mới: - [ ] nv1
+                                                    - [ ] nv2
+                                                    - [ ] nv3
+                                                    - [ ] nv4
+                                                    - [ ] nv5
+
+      - Phần 5 — Lưu ý quan trọng: ```
+                                   thông tin deadline và quy tắc ứng xử CLB
+                                   ```
+          
+ - Output:
+     - Hiển thị đủ 5 phần 
+     - CLB tiêu đề được in đậm điểm nổi bật
+     - Một bảng danh sách hiện ra 
+     - Lập thành công một bảng check list
+     - Hiển thị một blocktick bên trong chứa thông tin vừa quy tắc CLB 
+1.2 
+- Phần 1:# CLB
+- Phần 2: | | | và căn chỉnh lề |:---|:---:|:---:|
+- Phần 3: (` `)
+- Phần 4: - [ ] or - [x] 
+- Phần 5:(```   ```)
+1.3
+- Tạo mục tiêu đề lớn
+- Tạo một bảng danh sách các ban cán sự
+- Tạo một điểm nhấn và liệt kê các bước với lệnh git cho vào một vùng có màu để đánh dấu
+- lập ra một danh sách có tích hợp ô chống cho mọi báo cáo nhiệm vụ
+- Phần lưu ý quan trọng sẽ được in đậm và để trong một vùng có màu để thành viên chú ý tới
+
+Phần 2: Triển khai và chống lỗi
+2.1  
+# Câu lạc bộ Lập trình PTIT 
+## 1. Giới thiệu CLB
+PTIT Code Club là **môi trường học tập và thực chiến lập trình hàng đầu** dành cho sinh viên Học viện Công nghệ Bưu chính Viễn thông. 
+## 2. Danh sách Ban 
+| Tên Ban | Trưởng Ban | Liên hệ |
+| :--- | :--- | :--- |
+| Đào tạo | Nguyễn Văn A | [contact.academic@ptit.edu.vn](mailto:contact.academic@ptit.edu.vn) |
+|Truyền thông | Trần Thị B | [contact.media@ptit.edu.vn](mailto:contact.media@ptit.edu.vn) |
+|  Dự án | Lê Văn C | [contact.tech@ptit.edu.vn](mailto:contact.tech@ptit.edu.vn) |
+## 3. Hướng dẫn Gia nhập CLB dành cho Thành viên Mới
+`https://github.com`
+## 4. Bảng check nhiệm vụ
+- [ ] Hoàn thành bài test
+- [ ] Văn bản giới thiệu
+- [ ] kê khai thông tin về bản thân
+## 5. Lưu ý và quy tắc 
+``` 
+mọi người CLB hòa đồng, cởi mở, không nói túc, tích cực tham gia các hoạt động, đẩy mạnh tương tác với ban cán sự.
+```
+
+2.2 Bẫy dữ liệu
+- Giải quyết: [email]( đường dẫn tương đối của email)
+- khi paste sai: link sẽ thông báo tới một trang web không tồn tại và chỉ hiển thị phần trong []
